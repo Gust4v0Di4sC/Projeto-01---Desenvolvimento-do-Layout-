@@ -96,5 +96,3 @@ Este projeto está sob a licença **MIT**. Consulte o arquivo [LICENSE](LICENSE)
 🔹 **Atualizado em**: *Julho 2023*  
 
 --- 
-
-Esse README está pronto para ser usado no GitHub! Se precisar de ajustes, é só me avisar. 😊
