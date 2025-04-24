@@ -91,8 +91,4 @@ Este projeto está sob a licença **MIT**. Consulte o arquivo [LICENSE](LICENSE)
   <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap">
 </div>  
 
---- 
 
-🔹 **Atualizado em**: *Julho 2023*  
-
---- 
