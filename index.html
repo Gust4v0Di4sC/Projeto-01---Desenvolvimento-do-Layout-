@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Título (até 60 caracteres) -->
+  <title>AVANTI | Produtos em Promoção | Frete Grátis</title>
+  
+  <meta name="description"
+    content="Compre produtos com frete grátis e 10% off no pix. Envio rápido ✓ Garantia ✓ Ofertas exclusivas. Confira!">
+  <meta name="robots" content="index, follow">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+  <!-- Font Awesome via CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="/css/style.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet">
+    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+</head>
+
+<body>
+  
+  <!-- Banner superior -->
+    <aside class="top-banner" aria-label="Oferta de desconto">
+      Ganhe <strong class="bg-purple px-1 rounded">R$10,00</strong> de desconto no seu primeiro pedido. Utilize o cupom
+      <mark class="discount-text">DESCONTO10</mark>
+    </aside>
+
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-light bg-white  py-2" aria-label="Navegação principal">
+      <section class="container d-flex justify-content-between align-items-center">
+
+        <!-- Hamburguer menu (mobile) -->
+        <button class="btn border-0 d-lg-none" type="button" aria-label="Abrir menu" aria-expanded="false"
+          aria-controls="megaMenuCollapse" data-bs-toggle="collapse" data-bs-target="#megaMenuCollapse">
+          <i class="bi bi-list fs-3" aria-hidden="true"></i>
+        </button>
+
+        <!-- Logo (mobile) -->
+        <a class="navbar-brand mx-auto d-lg-none" href="/"  aria-label="Página inicial">
+          <img src="/img/icones/logo-empresa.svg" alt="Logo empresa" height="25">
+        </a>
+
+        <!-- Carrinho (mobile) -->
+        <div class="position-relative d-lg-none" aria-label="Carrinho de compras">
+          <i class="bi bi-cart fs-4" aria-hidden="true"></i>
+          <span class="badge bg-primary rounded-pill position-absolute top-0 start-100 translate-middle">2</span>
+        </div>
+
+        <!-- Logo + busca + ícones (desktop) -->
+        <div class="d-none d-lg-flex align-items-center w-100 justify-content-between">
+
+          <!-- Logo desktop -->
+          <a class="navbar-brand" href="#" aria-label="Página inicial">
+            <img src="/img/icones/logo-empresa.svg" alt="Logo empresa" height="30">
+          </a>
+
+          <!-- Busca desktop -->
+          <form role="search" class="w-50 mx-4" aria-label="Buscar produtos">
+            <div class=" search-bar">
+              <label for="searchInput" class="visually-hidden">Buscar produtos</label>
+              <input type="text" class="form-control" placeholder="Digite aqui o que você procura" id="searchInput">
+              <button class="search-icon" id="searchButton" aria-label="Buscar"><i class="bi bi-search" aria-hidden="true"></i></button>
+            </div>
+          </form>
+
+          <!-- Ícones desktop -->
+          <div class="d-flex align-items-center gap-4">
+            <!-- Ícone + nome do cliente -->
+            <div class="d-flex align-items-center user-icon-group" >
+              <a href="/minha-conta" class="d-flex align-items-center user-icon-group" aria-label="Minha conta"><i class="bi bi-person fs-4 me-2 user-icon" aria-hidden="true"></i></a>
+              
+              <span class="small fw-normal">Olá,<br> Nome cliente!</span>
+            </div>
+
+            <!-- Carrinho -->
+            <a href="/carrinho" class="position-relative" aria-label="Carrinho de compras">
+              <i class="bi bi-cart fs-4 cart-icon" aria-hidden="true"></i>
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+                2 <span class="visually-hidden">itens no carrinho</span>
+              </span>
+            </a>
+
+        </div>
+      </section>
+
+      <!-- Barra de busca (mobile) -->
+      <form role="search" class="container my-2 d-lg-none">
+        <div class="search-bar">
+          <label for="searchInput" class="visually-hidden">Buscar produtos</label>
+          <input type="text" class="form-control" placeholder="Digite aqui o que você procura" id="searchInput">
+          <button class="search-icon" type="button" id="searchButton" aria-label="Buscar">
+            <i class="bi bi-search"></i>
+          </button>
+        </div>
+      </form>
+    </nav>
+
+    <!-- Mega Menu - Colapsável no mobile, fixo no desktop -->
+    <div class="collapse d-lg-block" id="megaMenuCollapse" aria-labelledby="megaMenuToggle">
+      <nav class="departments bg-white " aria-label="Navegação por departamentos">
+        <div class="container">
+          <ul class="nav mega-menu-container" role="menubar">
+
+            <li class="nav-item" role="none">
+              <a class="nav-link all-categories-btn fw-bold" href="#" role="menuitem" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-bars" aria-hidden="true"></i> 
+                <span>Todas as Categorias</span>
+              </a>
+
+              <!-- Mega Menu -->
+              <div class="mega-menu" role="menu" aria-hidden="true" aria-label="Submenu de categorias">
+                <div class="mega-menu-content d-flex flex-wrap" role="none">
+
+                  <!-- Coluna de departamentos -->
+                  <section class="mega-menu-column bg-dept-scroll" aria-labelledby="dept-heading">
+                    <h3 id="dept-heading" class="visually-hidden">Departamentos</h3>
+                    <ul class="list-unstyled" role="menu">
+                      <li class="dept-item">
+                        <a role="menuitem" href="#" style="color: #0d6efd; font-weight: 500;">Departamento</a>
+                      </li>
+                      <li class="dept-item">
+                        <a role="menuitem" href="#">Departamento</a>
+                      </li>
+                      <li class="dept-item">
+                        <a role="menuitem" href="#">Departamento</a>
+                      </li>
+                      <li class="dept-item">
+                        <a role="menuitem" href="#">Departamento</a>
+                      </li>
+                      <li class="dept-item">
+                        <a role="menuitem" href="#">Departamento</a>
+                      </li>
+                      <li class="dept-item">
+                        <a role="menuitem" href="#">Departamento</a>
+                      </li>
+                      <li class="dept-item">
+                        <a role="menuitem" href="#">Departamento</a>
+                      </li>
+                      <li class="dept-item">
+                        <a role="menuitem" href="#">Departamento</a>
+                      </li>
+                      <li class="dept-item">
+                        <a role="menuitem" href="#">Departamento</a>
+                      </li>
+                      <li class="dept-item">
+                        <a  role="menuitem" href="#">Departamento</a>
+                      </li>
+                      <li class="dept-item">
+                        <a role="menuitem" href="#">Departamento</a>
+                      </li>
+                      <li class="dept-item">
+                        <a role="menuitem" href="#">Departamento</a>
+                      </li>
+                    </ul>
+                  </section>
+
+                  <!-- Categorias -->
+                  <section class="mega-menu-column" aria-labelledby="category1-heading">
+                    <h4 id="category1-heading" class="h6">Categoria</h4>
+                    <ul class="list-unstyled" role="menu">
+                      <li role="none"><a href="#" role="menuitem">Categoria</a></li>
+                      <li role="none"><a href="#" role="menuitem">Categoria</a></li>
+                      <li role="none"><a href="#" role="menuitem">Categoria</a></li>
+                      <li role="none"><a href="#" role="menuitem">Categoria</a></li>
+                      <li role="none"><a href="#" role="menuitem">Categoria</a></li>
+                      <li role="none"><a href="#" role="menuitem">Categoria</a></li>
+                      <li role="none"><a href="#" role="menuitem">Categoria</a></li>
+                      <li role="none"><a href="#" role="menuitem">Categoria</a></li>
+                      <li role="none"><a href="#" role="menuitem">Categoria</a></li>
+                    </ul>
+                  </section>
+
+                  <section class="mega-menu-column" aria-labelledby="category2-heading">
+                    <h4 id="category2-heading" class="h6">Categoria</h4>
+                    <ul role="menu" class="list-unstyled">
+                      <li role="none"><a href="#" role="menuitem">Categoria</a></li>
+                      <li role="none"><a href="#" role="menuitem">Categoria</a></li>
+                      <li role="none"><a href="#" role="menuitem">Categoria</a></li>
+                      <li role="none"><a href="#" role="menuitem">Categoria</a></li>
+                      <li role="none"><a href="#" role="menuitem">Categoria</a></li>
+                      <li role="none"><a href="#" role="menuitem">Categoria</a></li>
+                      <li role="none"><a href="#" role="menuitem">Categoria</a></li>
+                      <li role="none"><a href="#" role="menuitem">Categoria</a></li>
+                      <li role="none"><a href="#" role="menuitem">Categoria</a></li>
+                    </ul>
+                  </section>
+
+                  <section class="mega-menu-column" aria-labelledby="category3-heading">
+                    <h4 id="category3-heading" class="h6">Categoria</h4>
+                    <ul role="menu" class="list-unstyled">
+                      <li role="none"><a href="#"  role="menuitem">Categoria</a></li>
+                      <li role="none"><a href="#" role="menuitem">Categoria</a></li>
+                      <li role="none"><a href="#" role="menuitem">Categoria</a></li>
+                      <li role="none"><a href="#" role="menuitem">Categoria</a></li>
+                      <li role="none"><a href="#" role="menuitem">Categoria</a></li>
+                      <li role="none"><a href="#" role="menuitem">Categoria</a></li>
+                      <li role="none"><a href="#" role="menuitem">Categoria</a></li>
+                      <li role="none"><a href="#" role="menuitem">Categoria</a></li>
+                      <li role="none"><a href="#" role="menuitem">Categoria</a></li>
+                    </ul>
+                  </section>
+
+                  <!-- Imagem promocional (agora como quinta coluna) -->
+                  <aside class="mega-menu-column promo-image" aria-label="Promoção de produtos novos">
+
+                    <div class="promo-content text-light">
+                      <p class="fw-normal promo-text">
+                        Confira os
+                        <br>
+                        Produtos<br>
+                        <span class="fw-bold">Que<br>acabaram<br>De chegar</span>
+                      </p>
+                      <button class="btn btn-outline-light" aria-label="Ver todos os produtos novos">VER TODOS</button>
+                    </div>
+                  </aside>
+
+                </div>
+              </div>
+            </li>
+
+            <!-- Demais departamentos -->
+            <li class="nav-item" role="none">
+              <a class="nav-link" href="#" role="menuitem">Departamento</a>
+            </li>
+            <li class="nav-item" role="none">
+              <a class="nav-link" href="#" role="menuitem">Departamento</a>
+            </li>
+            <li class="nav-item" role="none">
+              <a class="nav-link" href="#" role="menuitem">Departamento</a>
+            </li>
+            <li class="nav-item" role="none">
+              <a class="nav-link" href="#" role="menuitem">Departamento</a>
+            </li>
+            <li class="nav-item" role="none">
+              <a class="nav-link" href="#" role="menuitem">Departamento</a>
+            </li>
+            <li class="nav-item" role="none">
+              <a class="nav-link" href="#" role="menuitem">Departamento</a>
+            </li>
+            <li class="nav-item" role="none">
+              <a class="nav-link" href="#" role="menuitem">Departamento</a>
+            </li>
+            <li class="nav-item" role="none">
+              <a class="nav-link" href="#" role="menuitem">Departamento</a>
+            </li>
+            <!-- ... -->
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Resultado da busca -->
+    <div class="container mt-2" id="searchResultContainer">
+
+    </div>
+
+    <section class="hero" aria-label="Promoção Super Sale">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Imagem da cadeira com roupas -->
+          <div class="col-5 col-md-5 col-lg-6 text-center">
+
+          </div>
+
+          <!-- Texto promocional -->
+          <div class="col-5 col-md-5 col-lg-6 text-center text-md-start hero-text">
+            <h1>SUPER<span class="responsive-text">SALE</span></h1>
+            <p class="text-uppercase text-primary" aria-hidden="true">Itens selecionados com até</p>
+            <h2 class="highlight">
+              <span aria-hidden="true">50% OFF</span>
+              <span class="visually-hidden">50 por cento de desconto</span>
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </header>
+
+
+  <main>
+    <!-- Primeiro carrossel -->
+    <section class="container mt-5" aria-labelledby="lancamentos-heading">
+      <header class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="mb-0" id="lancamentos-heading">Lançamentos</h2>
+        <a href="#" class="custom-hover-link fw-bold text-decoration-none" aria-label="Ver todos os lançamentos">Ver mais</a>
+      </header>
+
+
+
+      <div class="carousel-container position-relative">
+        <div id="productCarousel" class="carousel slide" data-bs-ride="carousel" aria-label="Carrossel de produtos lançamentos">
+          <!-- Indicadores -->
+          <div class="carousel-indicators d-none d-md-flex" id="carousel-indicators" role="tablist" aria-label="Seleção de slides">
+
+            <!-- Adicione mais indicadores conforme necessário -->
+          </div>
+
+          <div class="carousel-inner" id="carousel-content" role="listbox">
+
+          </div>
+
+          <button class="carousel-control-prev d-none d-md-flex" type="button" data-bs-target="#productCarousel"
+            data-bs-slide="prev"  aria-label="Slide anterior">
+            <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+
+          <button class="carousel-control-next d-none d-md-flex" type="button" data-bs-target="#productCarousel"
+            data-bs-slide="next" aria-label="Próximo slide">
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            <span class="visually-hidden">Próximo</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="product-section" aria-labelledby="product1-heading">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Product Image Column -->
+          <figure class="col-md-6">
+            <div class="product-image-container">
+              <img src="/img/banners/banner-img1.png" class="product-image" alt="Caneca Avanti - Vista frontal do produto">
+            </div>
+          </figure>
+
+          <!-- Product Content Column -->
+          <article class="col-md-6">
+            <div class="product-content">
+              <h2 id="product1-heading" class="product-title">LOREM IPSUM</h2>
+              <p class="product-description">
+                Duis consectetur mollis nisi lacus auctor dignissim.
+                Maecenas viverra dolor, Mauris euismod arcu ut
+                sagittis vehicula. Aliquam ultricies sem sit in laoreet
+                tincidunt urna vel. Sed lacinia eleifend magna, vel
+                pulvinar ligula hendrerit a. Maecenas rhoncus porttitor
+                tortor eget turpis. Donec consectetur vulputate orci,
+                eget pellentesque magna fermentum volutpat. Fusce
+                sagittis elit a libero commodo varius efficitur id
+                augue.
+              </p>
+              <p class="product-description">
+                Duis consectetur mollis nisi lacus auctor dignissim.
+                Maecenas viverra dolor, Mauris euismod arcu ut
+                sagittis vehicula. Aliquam ultricies sem sit in laoreet
+                tincidunt urna vel. Sed lacinia eleifend magna, vel
+                pulvinar ligula hendrerit a. Maecenas rhoncus porttitor
+                tortor eget turpis. Donec consectetur vulputate orci,
+                eget pellentesque magna fermentum volutpat. Fusce
+                sagittis elit a libero commodo varius efficitur id
+                augue.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-section-2" aria-labelledby="product2-heading">
+      <div class="container py-5 ">
+        <div class="row align-items-center">
+
+          <!-- Left Column -->
+          <article class="col-md-6">
+            <div class="title">LOREM IPSUM</div>
+
+            <div class="info-block" role="listitem">
+              <div class="info-icon" aria-hidden="true">
+                <i class="bi bi-geo-alt"></i>
+              </div>
+              <p class="info-text">
+                Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+              </p>
+            </div>
+
+            <div class="info-block" role="listitem">
+              <div class="info-icon" aria-hidden="true">
+                <i class="bi bi-geo-alt"></i>
+              </div>
+              <p class="info-text">
+                Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+              </p>
+            </div>
+
+            <div class="info-block" role="listitem">
+              <div class="info-icon" aria-hidden="true">
+                <i class="bi bi-geo-alt"></i>
+              </div>
+              <p class="info-text">
+                Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+              </p>
+            </div>
+          </article>
+
+          <!-- Right Column -->
+          <figure class="col-md-6 text-center">
+            <img src="/img/banners/banner-img2.png" alt="Copo Avanti - Destaque do produto" class="banner-img" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-section" aria-labelledby="product3-heading">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Product Image Column -->
+          <figure class="col-md-6">
+            <div class="product-image-container">
+              <img src="/img/banners/banner-img1.png" class="product-image" alt="Caneca Avanti - Vista lateral">
+            </div>
+          </figure>
+
+          <!-- Product Content Column -->
+          <article class="col-md-6">
+            <div class="product-content">
+              <h2 id="product3-heading" class="product-title">LOREM IPSUM</h2>
+              <p class="product-description">
+                Duis consectetur mollis nisi lacus auctor dignissim.
+                Maecenas viverra dolor, Mauris euismod arcu ut
+                sagittis vehicula. Aliquam ultricies sem sit in laoreet
+                tincidunt urna vel. Sed lacinia eleifend magna, vel
+                pulvinar ligula hendrerit a. Maecenas rhoncus porttitor
+                tortor eget turpis. Donec consectetur vulputate orci,
+                eget pellentesque magna fermentum volutpat. Fusce
+                sagittis elit a libero commodo varius efficitur id
+                augue.
+              </p>
+              <p class="product-description">
+                Duis consectetur mollis nisi lacus auctor dignissim.
+                Maecenas viverra dolor, Mauris euismod arcu ut
+                sagittis vehicula. Aliquam ultricies sem sit in laoreet
+                tincidunt urna vel. Sed lacinia eleifend magna, vel
+                pulvinar ligula hendrerit a. Maecenas rhoncus porttitor
+                tortor eget turpis. Donec consectetur vulputate orci,
+                eget pellentesque magna fermentum volutpat. Fusce
+                sagittis elit a libero commodo varius efficitur id
+                augue.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Segundo carrossel (se existir) -->
+    <section class="container mt-5" aria-labelledby="lancamentos-heading">
+      <header class="section-title">
+        <h2 id="lancamentos-heading">Lançamentos</h2>
+        <a href="#" class="custom-hover-link fw-normal" aria-label="Ver todos os lançamentos">Ver mais</a>
+      </header>
+
+      <div class="carousel-container position-relative">
+        <div id="productCarousel2" class="carousel slide" data-bs-ride="carousel" aria-label="Carrossel de produtos lançamentos">
+
+          <div class="carousel-indicators" id="carousel-indicators2" role="tablist" aria-label="Seleção de slides"></div>
+          <div class="carousel-inner" id="carousel-content2" role="listbox"></div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel2" data-bs-slide="prev" aria-label="Slide anterior">
+            <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+
+          <button class="carousel-control-next" type="button" data-bs-target="#productCarousel2" data-bs-slide="next" aria-label="Próximo slide">
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            <span class="visually-hidden">Próximo</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <aside class="banner-container" aria-label="Chamada para contato">
+      <div class="blue-strip" role="region" aria-label="Disponibilidade na sua região">
+        <a href="" aria-label="Entre em contato conosco para verificar disponibilidade">
+          Entre em contato conosco e verifique a disponibilidade para sua região!
+        </a>
+      </div>
+    </aside>
+
+ 
+  <section class="container my-5" aria-labelledby="newsletter-heading">
+    <div class="text-center mb-4">
+      <h2 id="newsletter-heading" class="h6 fw-normal">
+        Cadastre-se na nossa <a href="#" class="text-primary fw-bold text-decoration-none">newsletter</a>
+      </h2>
+    </div>
+  
+    <form class="bg-light p-3 p-md-4 rounded" action="#" method="post">
+      <!-- MOBILE (coluna) -->
+      <div class="d-flex flex-column gap-3 d-md-none">
+        <input type="text" class="form-control" placeholder="Digite seu nome" required>
+        <input type="email" class="form-control" placeholder="Digite seu e-mail" required>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="mobileCheck" required>
+          <label class="form-check-label small" for="mobileCheck">
+            Estou de acordo com a <a href="#" class="text-decoration-underline">Política de Privacidade</a>
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+      </div>
+  
+      <!-- DESKTOP (linha) -->
+      <div class="d-none d-md-flex align-items-end gap-3">
+        <div style="flex: 0 0 20%">
+          <input type="text" class="form-control" placeholder="Nome" required>
+        </div>
+        <div style="flex: 0 0 25%">
+          <input type="email" class="form-control" placeholder="E-mail" required>
+        </div>
+        <div class="form-check" style="flex: 1">
+          <input class="form-check-input" type="checkbox" id="desktopCheck" required>
+          <label class="form-check-label small" for="desktopCheck">
+            Concordo com a <a href="#" class="text-decoration-underline">Política</a>
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary" style="flex: 0 0 15%">Cadastrar</button>
+      </div>
+    </form>
+  </section>
+  </main>
+
+  <footer class="bg-light pt-5" role="contentinfo">
+    <div class="container text-center text-md-start">
+      <div class="row">
+        <!-- Logo + Redes Sociais -->
+        <div class="col-md-3 mb-4">
+          <figure>
+            <img src="/img/icones/logo-empresa.svg" alt="Logo da Empresa">
+          </figure>
+          <nav class="d-flex justify-content-center justify-content-md-start gap-3 mt-3" aria-label="Redes sociais">
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram fs-4 text-primary" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook fs-4 text-primary" aria-hidden="true"></i></a>
+            <a href="#" aria-label="YouTube"><i class="bi bi-youtube fs-4 text-primary" aria-hidden="true"></i></a>
+            <a href="#" aria-label="TikTok"><i class="bi bi-tiktok fs-4 text-primary" aria-hidden="true"></i></a>
+          </nav>
+        </div>
+  
+        <!-- Seção Institucional -->
+        <div class="col-md-3 mb-4">
+          <!-- Mobile (Accordion) -->
+          <div class="d-md-block d-lg-none accordion accordion-flush" id="footerAccordion">
+            <div class="accordion-item border-0">
+              <h3 class="accordion-header" id="institucionalHeading">
+                <button class="accordion-button collapsed bg-light p-0 fw-bold fs-5" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#institucionalCollapse"
+                  aria-expanded="false" aria-controls="institucionalCollapse">
+                  Institucional
+                </button>
+              </h3>
+              <div id="institucionalCollapse" class="accordion-collapse collapse"
+                aria-labelledby="institucionalHeading" data-bs-parent="#footerAccordion">
+                <div class="accordion-body p-0 pt-2">
+                  <ul class="list-unstyled" role="list">
+                    <li role="listitem"><a href="#" class="text-dark text-decoration-none">Sobre Nós</a></li>
+                    <li role="listitem"><a href="#" class="text-dark text-decoration-none">Nossas Lojas</a></li>
+                    <li role="listitem"><a href="#" class="text-dark text-decoration-none">Privacidade e Segurança</a></li>
+                    <li role="listitem"><a href="#" class="text-dark text-decoration-none">Termos e Condições</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Desktop -->
+          <div class="d-none d-md-block">
+            <h3 class="fw-bold">Institucional</h3>
+            <ul class="list-unstyled" role="list">
+              <li role="listitem"><a href="#" class="text-dark text-decoration-none">Sobre Nós</a></li>
+              <li role="listitem"><a href="#" class="text-dark text-decoration-none">Nossas Lojas</a></li>
+              <li role="listitem"><a href="#" class="text-dark text-decoration-none">Privacidade e Segurança</a></li>
+              <li role="listitem"><a href="#" class="text-dark text-decoration-none">Termos e Condições</a></li>
+            </ul>
+          </div>
+        </div>
+  
+        <!-- Seção Central de Ajuda -->
+        <div class="col-md-3 mb-4">
+          <!-- Mobile (Accordion) -->
+          <div class="d-md-block d-lg-none accordion accordion-flush" id="footerAccordion2">
+            <div class="accordion-item border-0">
+              <h3 class="accordion-header" id="ajudaHeading">
+                <button class="accordion-button collapsed bg-light p-0 fw-bold fs-5" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#ajudaCollapse"
+                  aria-expanded="false" aria-controls="ajudaCollapse">
+                  Central de ajuda
+                </button>
+              </h3>
+              <div id="ajudaCollapse" class="accordion-collapse collapse"
+                aria-labelledby="ajudaHeading" data-bs-parent="#footerAccordion2">
+                <div class="accordion-body p-0 pt-2">
+                  <ul class="list-unstyled" role="list">
+                    <li role="listitem"><a href="#" class="text-dark text-decoration-none">Fale Conosco</a></li>
+                    <li role="listitem"><a href="#" class="text-dark text-decoration-none">Frete e Entrega</a></li>
+                    <li role="listitem"><a href="#" class="text-dark text-decoration-none">Trocas e Devoluções</a></li>
+                    <li role="listitem"><a href="#" class="text-dark text-decoration-none">Formas de Pagamento</a></li>
+                    <li role="listitem"><a href="#" class="text-dark text-decoration-none">FAQ</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Desktop -->
+          <div class="d-none d-md-block">
+            <h3 class="fw-bold">Central de ajuda</h3>
+            <ul class="list-unstyled" role="list">
+              <li role="listitem"><a href="#" class="text-dark text-decoration-none">Fale Conosco</a></li>
+              <li role="listitem"><a href="#" class="text-dark text-decoration-none">Frete e Entrega</a></li>
+              <li role="listitem"><a href="#" class="text-dark text-decoration-none">Trocas e Devoluções</a></li>
+              <li role="listitem"><a href="#" class="text-dark text-decoration-none">Formas de Pagamento</a></li>
+              <li role="listitem"><a href="#" class="text-dark text-decoration-none">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+  
+        <!-- Seção Atendimento -->
+        <div class="col-md-3 mb-4">
+          <!-- Mobile (Accordion) -->
+          <div class="d-md-block d-lg-none accordion accordion-flush" id="footerAccordion3">
+            <div class="accordion-item border-0">
+              <h3 class="accordion-header" id="atendimentoHeading">
+                <button class="accordion-button collapsed bg-light p-0 fw-bold fs-5" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#atendimentoCollapse"
+                  aria-expanded="false" aria-controls="atendimentoCollapse">
+                  Atendimento
+                </button>
+              </h3>
+              <div id="atendimentoCollapse" class="accordion-collapse collapse"
+                aria-labelledby="atendimentoHeading" data-bs-parent="#footerAccordion3">
+                <address class="accordion-body p-0 pt-2">
+                  <p><strong>Telefone:</strong> <a href="tel:0012345678">(00) 1234-5678</a></p>
+                  <p><strong>E-mail:</strong> <a href="mailto:exemplo@exemplo.com.br">exemplo@exemplo.com.br</a></p>
+                  <p class="mb-0"><strong>Horário de atendimento:</strong></p>
+                  <p class="mb-0">Segunda a Sábado: 07h00 às 23h00</p>
+                  <p>Domingos e Feriados: 07h00 às 21h00</p>
+                </address>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Desktop -->
+          <div class="d-none d-md-block">
+            <h3 class="fw-bold">Atendimento</h3>
+            <address>
+              <p><strong>Telefone:</strong> <a href="tel:0012345678">(00) 1234-5678</a></p>
+              <p><strong>E-mail:</strong> <a href="mailto:exemplo@exemplo.com.br">exemplo@exemplo.com.br</a></p>
+              <p class="mb-0"><strong>Horário de atendimento:</strong></p>
+              <p class="mb-0">Segunda a Sábado: 07h00 às 23h00</p>
+              <p>Domingos e Feriados: 07h00 às 21h00</p>
+            </address>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Formas de Pagamento -->
+      <div class="d-flex flex-wrap justify-content-center align-items-center gap-4 py-4 border-top">
+        <figure>
+          <img src="/img/icones/amex.svg" alt="Amex" height="30">
+        </figure>
+        <figure>
+          <img src="/img/icones/mastercard.svg" alt="MasterCard" height="30">
+        </figure>
+        <figure>
+          <img src="/img/icones/visa.svg" alt="Visa" height="30">
+        </figure>
+        <figure>
+          <img src="/img/icones/hipercard.svg" alt="HiperCard" height="30">
+        </figure>
+        <figure>
+          <img src="/img/icones/elo.svg" alt="Elo" height="30">
+        </figure>
+        <figure>
+          <img src="/img/icones/dinersclub.svg" alt="Diners Club International" height="30">
+        </figure>
+        <figure>
+          <img src="/img/icones/paypal.svg" alt="PayPal" height="30">
+        </figure>
+        <figure>
+          <img src="/img/icones/pix.svg" alt="Pix" height="30">
+        </figure>
+        <figure>
+          <img src="/img/icones/boleto.svg" alt="Boleto" height="30">
+        </figure>
+      </div>
+  
+      <!-- Rodapé Inferior -->
+      <div class="text-center py-3 border-top small text-muted">
+        <p style="max-width: 800px; margin: 0 auto;">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </p>
+  
+        <div class="d-flex justify-content-center gap-3 mt-4 mb-4">
+          <figure>
+            <img src="/img/icones/letsencrypt.svg" height="30" alt="Certificado Let's Encrypt">
+          </figure>
+          <figure>
+            <img src="/img/icones/vtex.svg" height="30" alt="Plataforma VTEX">
+          </figure>
+          <figure>
+            <img src="/img/icones/avanti-logo.svg" height="20" alt="Avanti">
+          </figure>
+          <figure>
+            <img src="/img/icones/vtex-logo.svg" height="30" alt="VTEX">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/script.min.js"></script>
+</body>
+
+</html>

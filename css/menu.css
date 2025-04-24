@@ -1,0 +1,120 @@
+/* Estilos para o mega menu */
+
+.nav.mega-menu-container{
+    gap: 16px;
+}
+.mega-menu-container {
+    position: relative;
+    width: 100%;
+}
+
+.mega-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.bg-dept-scroll{
+    flex: 0 0 200px;
+    background-color: #F5F5F5;
+    position: relative;
+    height: 400px;
+    overflow-y: auto; /* Adiciona scroll vertical */
+    padding-right: 10px; /* Espaço para o scroll */
+}
+
+.mega-menu-container:hover .mega-menu {
+    display: block;
+}
+
+.mega-menu-content {
+    display: flex;
+    padding-right: 24px;
+    padding-bottom: 11px;
+}
+
+.mega-menu-column {
+    flex: 1;
+    padding: 0 15px;
+}
+
+.mega-menu-column h6 {
+    color: #0d6efd;
+    margin-bottom: 10px;
+}
+
+.mega-menu-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mega-menu-column ul li {
+    padding: 5px 0;
+}
+
+.mega-menu-column ul li a {
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.mega-menu-column ul li a:hover {
+    color: #0d6efd;
+}
+
+.dept-item {
+    position: relative;
+}
+
+.dept-item > a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dept-item > a::after {
+    content: '›';
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+.all-categories-btn {
+    color: #0d6efd;
+    font-weight: 500;
+}
+
+/* Estilos para a imagem promocional */
+.promo-image {
+    background: url('/img/promo-img.png') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 3rem;
+    border-radius: 0.5rem;
+  }
+  
+  .promo-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .promo-text {
+    font-size: 25px;
+    margin-bottom: 4rem;
+    line-height: 1.2;
+    white-space: normal;
+  }
+  
+  .promo-content .btn {
+    font-size: 0.875rem;
+    padding: 0.5rem 1.2rem;
+    align-self: flex-start;
+  }

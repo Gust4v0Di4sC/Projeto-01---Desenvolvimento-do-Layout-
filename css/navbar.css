@@ -1,0 +1,83 @@
+.bg-purple {
+    background-color: #6f42c1;
+}
+
+
+
+
+.top-banner {
+    background-color: #0d6efd;
+    color: white;
+    padding: 8px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.discount-text{
+    font-weight: 200;
+    font-style: italic;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.search-bar {
+    position: relative;
+    width: 100%;
+}
+
+.search-bar input {
+    border-radius: 10px;
+    padding-right: 40px;
+    padding-left: 24px;
+}
+
+.search-bar button{
+    background: none;
+    border: none;
+}
+
+.search-bar .search-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Hover azul no ícone de usuário */
+.user-icon {
+    color: #000;
+    transition: color 0.3s ease;
+  }
+  .user-icon:hover {
+    color: #0d6efd; /* Bootstrap Primary */
+  }
+  
+
+.user-cart-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Ajustes do badge no carrinho */
+.cart-icon {
+    position: relative;
+    font-size: 1.5rem;
+  }
+  
+  .cart-icon + .badge {
+    font-size: 0.65rem;
+    padding: 0.3em 0.45em;
+    transform: translate(50%, -40%);
+  }
+
+
+
+.departments .nav-link {
+    color: #333;
+    font-size: 14px;
+}

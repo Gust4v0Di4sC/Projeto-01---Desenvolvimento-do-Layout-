@@ -1,0 +1,160 @@
+.product-section {
+    padding: 50px 0;
+}
+
+.product-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-content {
+    padding: 20px;
+}
+
+.product-title {
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #333;
+}
+
+.product-description {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+
+.hero {
+    background-image: url('/img/banners/hero.png'); 
+    background-repeat: no-repeat;
+      background-size: cover; /* ou cover */
+      background-position: left center; /* muda aqui pra reposicionar */
+    padding: 60px 0;
+  }
+  .hero img {
+    max-width: 100%;
+    height: auto;
+  }
+  .hero-text h1 {
+    font-weight: bold;
+    word-break: break-all;
+    font-size: 100px;
+  }
+  .hero-text p {
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 7px;
+  }
+  .hero-text h1 span {
+    font-weight: 300;
+  }
+  .highlight {
+    color: #005CFF;
+    font-weight: bold;
+    font-size: 60px;
+    text-align: center;
+  }
+
+/* 
+Banner 2 CSS */
+.product-section-2{
+    background-color: #DEDEDE;
+}
+.info-icon {
+    background-color: #0059ff;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    flex-shrink: 0;
+  }
+
+  .info-block {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+
+  .info-text {
+    font-size: 14px;
+    color: #333;
+  }
+
+  .title {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .banner-img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 10px;
+  }
+
+  .banner-container {
+    position: relative;
+    background-image: url('/img/banners/banner-img3.png'); /* Substituir aqui */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .blue-strip {
+    background-color: #0059ff;
+    padding: 20px 40px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+  }
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero{
+      background-image: url('/img/banners/hero-responsive.png');
+      background-position: left center; /* muda aqui pra reposicionar */
+      padding: 30px 0;
+    }
+    
+    
+    .hero-text h1 {
+       font-size: 40px;
+       white-space: wrap;
+    }
+    .responsive-text {
+      word-break: break-all;
+    }
+    
+    .hero-text p {
+      font-weight: bold;
+      font-size: 12px;
+      letter-spacing: 2px;
+    }
+
+    .highlight {
+      color: #005CFF;
+      font-weight: bold;
+      font-size: 32px;
+      text-align: center;
+    }
+}
