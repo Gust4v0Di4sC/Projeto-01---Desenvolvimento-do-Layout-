@@ -8,10 +8,8 @@
 A **AVANTI** é um e-commerce desenvolvido com:  
 ✔ **Front-end moderno** (HTML5, CSS3, JavaScript)  
 ✔ **Design responsivo** (Mobile First)  
-✔ **Integração com APIs de pagamento**  
 ✔ **SEO otimizado** para melhor ranqueamento  
 
-**🔗 Link do Projeto:** [https://avanti-ecommerce.com](https://avanti-ecommerce.com) *(exemplo)*  
 
 ---
 
