@@ -190,7 +190,7 @@ const products = [
     slide.appendChild(row);
     carouselInner.appendChild(slide);
 
-    // Indicador
+
     const indicator = document.createElement("button");
     indicator.type = "button";
     indicator.setAttribute("data-bs-target", "#productCarousel");
@@ -244,7 +244,7 @@ const products = [
     slide.appendChild(row);
     carouselInner2.appendChild(slide);
 
-    // Indicador
+  
     const indicator = document.createElement("button");
     indicator.type = "button";
     indicator.setAttribute("data-bs-target", "#productCarousel2");
@@ -259,40 +259,38 @@ const products = [
  
  
  
- // Função para realizar a busca
+
  function performSearch() {
-    // Obter o valor do campo de busca
+    
     const searchInput = document.getElementById('searchInput');
     const searchTerm = searchInput.value.trim();
     
-    // Obter o container de resultados
+    
     const searchResultContainer = document.getElementById('searchResultContainer');
     
-    // Se o campo não estiver vazio, mostrar o resultado
+    
     if (searchTerm !== '') {
-        // Limpar o container de resultados anteriores
+        
         searchResultContainer.innerHTML = '';
         
-        // Criar o elemento de resultado da busca dinamicamente
+        
         const resultElement = document.createElement('div');
         resultElement.className = 'search-result-container';
         resultElement.innerHTML = `<p>Você buscou por: <strong>'${searchTerm}'</strong></p>`;
         
-        // Adicionar o elemento ao container
+        
         searchResultContainer.appendChild(resultElement);
         
-        // Opcional: limpar o campo de busca após a pesquisa
-        // searchInput.value = '';
+        
     } else {
-        // Se o campo estiver vazio, limpar o container de resultados
         searchResultContainer.innerHTML = '';
     }
 }
 
-// Adicionar evento de clique ao botão de busca
+
 document.getElementById('searchButton').addEventListener('click', performSearch);
 
-// Adicionar evento de tecla 'Enter' ao campo de busca
+
 document.getElementById('searchInput').addEventListener('keypress', function(event) {
     if (event.key === 'Enter') {
         performSearch();
